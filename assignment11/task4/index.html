@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+</head>
+
+<body>
+    <style>
+        input{
+            display: block ; 
+            margin-bottom: 1vh ; 
+        }
+    </style>
+
+
+    <div id="app">
+
+        <input type="text" v-model="name" v-on:input="checkReg">
+        <input type="text" v-model="email" v-on:input="checkReg">
+        <input type="password" v-model="password" v-on:input="checkReg">
+
+        <p>{{message}}</p>
+
+
+        <button v-if="show" v-on:click="accept">Accept</button>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

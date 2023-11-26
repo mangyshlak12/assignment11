@@ -1,0 +1,19 @@
+.line{
+    text-decoration: line-through ; 
+}
+
+.clear{
+    text-decoration: none ; 
+}
+
+li{
+    display: flex ; 
+}
+
+button{
+    width: fit-content ; 
+    height: fit-content ;
+    position: relative ; 
+    top: 1.5vh ; 
+    left: 5%; 
+}
